@@ -103,6 +103,12 @@ function updateCount() {
     saveNotes();
     render();
   }
+
+  function deleteNote(id) {
+    notes = notes.filter((note) => note.id !== id);
+    saveNotes();
+    render();
+  }
   
 
   
